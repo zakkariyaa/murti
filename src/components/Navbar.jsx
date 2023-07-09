@@ -65,14 +65,14 @@ const Navbar = () => {
 };
 
 const StyledNavbar = styled.nav`
-  padding: 1rem 4rem;
+  padding: 0 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   .heart__icon {
     color: #0c1e50;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     @media (max-width: 420px) {
       font-size: 1.9rem;
     }
@@ -106,7 +106,7 @@ const StyledNavbar = styled.nav`
       position: relative;
       text-decoration: none;
       color: #0c1e50;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       ::after {
         content: '';
         height: 2px;
