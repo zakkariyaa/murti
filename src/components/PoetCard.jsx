@@ -35,7 +35,7 @@ const PoetCard = ({
 const StyledArticle = styled.section`
   padding: 0.5rem;
   box-shadow: 4px 4px 10px -2px rgba(0, 0, 0, 0.5);
-  background-color: #d8e4e1;
+  background-color: #f1faee;
 
   img {
     width: 100%;
