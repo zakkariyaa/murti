@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import styled from 'styled-components';
 import Rose from '../assets/rose1.png';
 
