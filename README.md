@@ -2,7 +2,7 @@
 
 This is a hobby project made with reactjs [Project website](https://murti.netlify.app/).
 
-<img src="https://raw.githubusercontent.com/zakkariyaa/suugaan/f0ee6095bc8ed5546785f012c07a1a5be4a04ed6/src/assets/suugaan.png" alt="Murti App" height="522px" width="100%" />
+<img src="https://github.com/zakkariyaa/murti/blob/main/src/assets/murti.png" alt="Murti App" height="850px" width="100%" />
 
 <br />
 <br />
