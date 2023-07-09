@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import * as Realm from 'realm-web';
 import styled from 'styled-components';
-import getMonthName from '../utils/getMonthName';
 import { MdLocationOn } from 'react-icons/md';
 import { BiCalendar, BiMessageSquareAdd } from 'react-icons/bi';
 import PoemCard from '../components/PoemCard';
@@ -14,7 +13,11 @@ const User = () => {
   } = useLocation();
 
   // format join date as M-Y
-  // const joinDate = userData.created_at.split('-').slice(0, 2);
+  const joinDate = userData.created_at
+    .toString()
+    .split(' ')
+    .slice(1, 4)
+    .join(' ');
   const [formShown, setFormShown] = useState(false);
   const [userPoems, setUserPoems] = useState([]);
   const formRef = useRef(null);
@@ -36,7 +39,7 @@ const User = () => {
     };
 
     fetchData();
-  }, [userPoems]);
+  }, []);
 
   const handleFormShown = () => {
     setFormShown((prevValue) => !prevValue);
@@ -85,7 +88,7 @@ const User = () => {
           <p className="join__date">
             {' '}
             <BiCalendar />
-            {/* {getMonthName(joinDate[1])} {joinDate[0]} */}
+            {joinDate}
           </p>
         </div>
       </StyledHeader>

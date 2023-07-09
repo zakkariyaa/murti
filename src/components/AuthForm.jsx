@@ -12,7 +12,7 @@ const AuthForm = ({ page }) => {
 
     const formData = new FormData(e.target);
     let formValues = Object.fromEntries(formData.entries());
-    formValues = { ...formValues, create_at: new Date() };
+    formValues = { ...formValues, created_at: new Date() };
 
     const app = new Realm.App({ id: 'data-ufiyw' });
     const credentials = Realm.Credentials.anonymous();
