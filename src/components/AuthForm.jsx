@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import * as Realm from 'realm-web';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';

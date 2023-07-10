@@ -64,6 +64,7 @@ const User = () => {
         console.error('Failed to log in', err);
       }
 
+      window.location.reload();
       formRef.current.reset();
     }
   };
